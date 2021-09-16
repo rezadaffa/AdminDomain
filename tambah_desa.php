@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="img/logo.png">
 
     <title>Data Domain Desa - Dinkominfo Banyumas</title>
 
@@ -45,23 +46,23 @@
 
            <!-- Nav Item - Dashboard -->
            <li class="nav-item">
-            <a class="nav-link" href="homepage.html">
+            <a class="nav-link" href="homepage.php">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item active">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="tambah_desa.php">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Tambah Data Desa</span></a>
+                    <span>Tambah Domain Desa</span></a>
                 </li>
 
                 <!-- Nav Item - Edit Data Desa -->
                 <li class="nav-item">
-                    <a class="nav-link" href="edit_desa.html">
+                    <a class="nav-link" href="edit_desa.php">
                         <i class="fas fa-fw fa-table"></i>
-                        <span>Edit Data Desa</span></a>
+                        <span>Edit Domain Desa</span></a>
                     </li>
 
                     <!-- Divider -->
@@ -154,7 +155,7 @@
                         Settings
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="index.html" data-toggle="modal" data-target="#logoutModal">
+                    <a class="dropdown-item" href="index.php" data-toggle="modal" data-target="#logoutModal">
                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                         Logout
                     </a>
@@ -174,30 +175,30 @@
             <h1 class="h3 mb-0 text-gray-800">Tambah Entry Desa</h1>
         </div>
 
-        <form>
+        <form method="post" action="cek_tambah.php">
           <div class="form-group">
-            <label for="exampleKecamatan">Kecamatan</label>
-            <input type="text" class="form-control" id="exampleKecamatan" aria-describedby="kecamatan" placeholder="Masukan Nama Kecamatan">
+            <label for="kecamatan">Kecamatan</label>
+            <input type="text" class="form-control" name="kecamatan" placeholder="Masukan Nama Kecamatan" aria-describedby="kecamtanHelp">
         </div>
         <div class="form-group">
-            <label for="exampleDesa">Desa</label>
-            <input type="text" class="form-control" id="exampleDesa" placeholder="Masukan Nama Desa">
+            <label for="desa">Desa</label>
+            <input type="text" class="form-control" name="desa" placeholder="Masukan Nama Desa" aria-describedby="desaHelp">
         </div>
         <div class="form-group">
-            <label for="exampleDesa">Fasilitas Dinkominfo</label>
-            <input type="text" class="form-control" id="exampleDesa" placeholder="Masukan Keterangan Fasilitas">
+            <label for="fasilitas">Fasilitas Dinkominfo</label>
+            <input type="text" class="form-control" name="fasilitas" placeholder="Masukan Fasilitas" aria-describedby="fasilitasHelp">
         </div>
         <div class="form-group">
-            <label for="exampleDesa">Domain</label>
-            <input type="text" class="form-control" id="exampleDesa" placeholder="Masukan Nama Domain">
+            <label for="domian">Domain</label>
+            <input type="text" class="form-control" name="domian" placeholder="Masukan Nama Domain" aria-describedby="domianHelp">
         </div>
         <div class="form-group">
-            <label for="exampleDesa">Artikel</label>
-            <input type="text" class="form-control" id="exampleDesa" placeholder="Masukan Jumlah Artikel">
+            <label for="artikel">Artikel</label>
+            <input type="number" class="form-control" name="artikel" placeholder="Masukan Jumlah Artikel" aria-describedby="artikelHelp">
         </div>
         <div class="form-group">
-            <label for="exampleDesa">Terakhir Update</label>
-            <input type="text" class="form-control" id="exampleDesa" placeholder="Masukan Nama Desa">
+            <label for="update">Terakhir Update</label>
+            <input type="text" class="form-control" name="update" placeholder="Masukan Terakhir Update" aria-describedby="updateHelp">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -243,7 +244,7 @@ aria-hidden="true">
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="index.html">Logout</a>
+            <a class="btn btn-primary" href="index.php">Logout</a>
         </div>
     </div>
 </div>
